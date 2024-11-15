@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package model;
+option go_package = "./../model";
+
+service Product {
+  rpc GetProduct (GetProductRequest) returns (GetProductResponse);
+}
+
+message GetProductRequest {
+  uint32 product_id = 1;
+  string token = 2;
+}
+
+message ProductData {
+  uint32 id = 1;
+  uint32 category_id = 2;
+  string name = 3;
+  string description = 4;
+  string image = 5;
+  float price = 6;
+  bool is_active = 7;
+  string created_at = 8;
+}
+
+message GetProductResponse {
+  int32 code = 1;
+  string message = 2;
+  ProductData data = 3;
+}

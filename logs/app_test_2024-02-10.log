@@ -1,0 +1,6 @@
+time="2024-02-10T22:14:45+07:00" level=info msg="req product %!(EXTRA model.OrderDetail={1 9.99 2 0 19.98})"
+time="2024-02-10T22:14:45+07:00" level=info msg="res product %!(EXTRA *entity.Product=&{1 0 Mocked Product 1 Mocked product description 1 mock1.jpg 9.99 true 2024-02-10T12:00:00Z})"
+time="2024-02-10T22:17:57+07:00" level=info msg="req product %!(EXTRA model.OrderDetail={1 2.5 2 0 5})"
+time="2024-02-10T22:17:57+07:00" level=info msg="res product %!(EXTRA *entity.Product=&{2 0 Latte Coffee with milk  3 true 2024-02-10 22:17:57})"
+time="2024-02-10T22:19:06+07:00" level=info msg="Outgoing response CreateOrderHandler" Body="{\"code\":205,\"message\":\"Invalid Product Price\"}\n" RequestID=415a58bb-6a3f-4d19-b6eb-f7a8a5e2f114 Status=200
+time="2024-02-10T22:46:02+07:00" level=info msg="Outgoing response CreateOrderHandler" Body="{\"code\":205,\"message\":\"Invalid Product Price\"}\n" RequestID=b6256ca9-4bd1-4dd3-ad96-a311467fa4f4 Status=200
